@@ -10,6 +10,11 @@
 
 ## Setup
 0. Use the latest version of [NVIM_0.9.0](https://github.com/neovim/neovim/releases) and [Node.js_18.15.0](https://nodejs.org/en/download)
+Install [Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Regular/complete)
+```
+sudo cp *.ttf /usr/share/fonts/
+sudo fs-cache -fv
+```
 1. Install `packer.nvim`
 
 This setup uses `packer.nvim` as package manager, so first install `packer.nvim` by following the [official instructions](https://github.com/wbthomason/packer.nvim#quickstart)
