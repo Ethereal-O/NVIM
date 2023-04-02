@@ -81,7 +81,7 @@ return require('packer').startup(function()
     use 'git@github.com:lukas-reineke/indent-blankline.nvim'
 
     -- startup screen
-    use 'git@github.com:leslie255/aleph-nvim'
+    use 'git@github.com:Ethereal-O/aleph-nvim'
 
     -- scroll bar
     use 'git@github.com:petertriho/nvim-scrollbar'
