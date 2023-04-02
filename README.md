@@ -22,7 +22,7 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
 2. Clone this repo into `~/.config/nvim`:
 
 ```
-git clone https://github.com/Ethereal-O/NVIM.git ~/.config/nvim
+git clone git@github.com:Ethereal-O/NVIM.git ~/.config/nvim
 ```
 
 3. When you first enter `nvim`, you will see a bunch of mess because the plugins aren't installed yet, so run `:PackerInstall` to install the plugins
