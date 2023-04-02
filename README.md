@@ -9,15 +9,20 @@
 <img src="https://i.imgur.com/N61fK6b.png" alt="Telescope search" width="49%"/><br>
 
 ## Setup
-0. Use the latest version of NVIM
+0. Use the latest version of [NVIM_0.9.0](https://github.com/neovim/neovim/releases) and [Node.js_18.15.0](https://nodejs.org/en/download)
 1. Install `packer.nvim`
 
 This setup uses `packer.nvim` as package manager, so first install `packer.nvim` by following the [official instructions](https://github.com/wbthomason/packer.nvim#quickstart)
 
+```bash
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
 2. Clone this repo into `~/.config/nvim`:
 
 ```
-git clone https://github.com/leslie255/nvim-config.git ~/.config/nvim
+git clone https://github.com/Ethereal-O/NVIM.git ~/.config/nvim
 ```
 
 3. When you first enter `nvim`, you will see a bunch of mess because the plugins aren't installed yet, so run `:PackerInstall` to install the plugins
@@ -26,6 +31,13 @@ git clone https://github.com/leslie255/nvim-config.git ~/.config/nvim
 4. This setup uses the modern LSP system for language support, things like auto-complete, symbols tree, etc..., **which requires a LSP server outside the editor**. Fortunately [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) manages to configure most of the LSP server options for us, all we need to do is to install the LSP servers themselves:
 
 In `lua/configs/autocomplete.lua`, line `108`, edit the list of LSP servers, a complete list of supported LSP servers is listed [here](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md). After that install the corresponding servers on your OS, auto-complete should pop up for supported languages now :)
+
+for example,
+```bash
+sudo apt-get install clangd-12
+sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
+```
+
 5. Final step, smart highlighting using treesitter!
 
 The default vim regex-based highlighting is pretty lame, for NVIM, [treesitter](https://github.com/nvim-treesitter/nvim-treesitter) offered an advanced code highlighting that can make your code much cleaner
@@ -38,6 +50,11 @@ Alternatively, in `lua/configs/treesitter.lua`, line `6`, you can have a list of
 
 This config also uses `ai.nvim` plugin for AI completion, which requires you set an environmental variable called `OPENAI_API_KEY`. You can get an OpenAI API key [here](https://beta.openai.com/api/).
 After that, you can use `<C-a>` to activate AI completion, you can either add a comment telling the AI what to do, or send it a message using `:AI <message>`.
+
+use Copilot:
+```
+:Copliot setup
+```
 
 ## Usage
 > TODO: for now read `lua/core/keymaps.lua` for the keymaps
