@@ -12,6 +12,17 @@
 0. Use the latest version of [NVIM_0.9.0](https://github.com/neovim/neovim/releases) and [Node.js_18.15.0](https://nodejs.org/en/download)
 Install [Nerd font](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode/Regular/complete)
 ```
+sudo ln -s /home/ethereal/Softwares/Learning_And_Life/Nvim/nvim-linux64/bin/nvim /usr/local/bin/nvim
+```
+
+```
+# Nodejs
+VERSION=v18.15.0
+DISTRO=linux-x64
+export PATH=/home/ethereal/Softwares/Learning_And_Life/Nodejs/node-$VERSION-$DISTRO/bin:$PATH
+```
+
+```
 sudo cp *.ttf /usr/share/fonts/
 sudo fs-cache -fv
 ```
