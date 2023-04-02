@@ -24,7 +24,7 @@ export PATH=/home/ethereal/Softwares/Learning_And_Life/Nodejs/node-$VERSION-$DIS
 
 ```
 sudo cp *.ttf /usr/share/fonts/
-sudo fs-cache -fv
+sudo fc-cache -fv
 ```
 1. Install `packer.nvim`
 
