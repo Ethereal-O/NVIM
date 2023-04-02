@@ -90,7 +90,8 @@ return require('packer').startup(function()
     use 'git@github.com:samodostal/image.nvim'
 
     -- AI completion!
-    use 'git@github.com:aduros/ai.vim'
+    -- use 'git@github.com:aduros/ai.vim'
+    use 'git@github.com:github/copilot.vim'
 
     -- duck lol
     use 'git@github.com:tamton-aquib/duck.nvim'
